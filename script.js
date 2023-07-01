@@ -5,6 +5,9 @@ const upButton = document.querySelector('.up-button')
 const downButton = document.querySelector('.down-button')
 const slidesLength = slideRight.querySelectorAll('div').length
 
+
+console.log(slidesLength)
+
 let activeSlideIndex = 0
 
 slideLeft.style.top = `-${(slidesLength - 1) * 100}vh`

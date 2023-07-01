@@ -12,6 +12,12 @@ body {
   height: 100vh;
     
 }
+@media (max-width:600px){
+  img {
+    max-width: 80%
+  }
+ 
+}
 
 .slider-container {
   position: relative;
