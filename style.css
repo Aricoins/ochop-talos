@@ -78,56 +78,53 @@ body {
 }
 
 button {
-  background-color:#fac8cb; ;
+  background-color: black; 
   border: groove;
   color: white;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.8;
   display: flex;
-  margin-top: 75%;
+  margin-top: 35%;
   margin-left: 35%;
   padding: 1%;
   position: fixed;
-  width: 40px;
-  height: 40px;
-  bottom: 5rem;
-  right: 20%;
+flex-wrap: wrap;
 
  }
+
+ button:hover {
+  color: white;
+  opacity: 0.6;
+}
+
  @media (max-width:555px) {
   .left-slide h1 {
     max-width: 80%;
    font-size: medium;
    right:50%;
+   text-orientation: sideways;
 }}
 
-button:hover {
-  color: #222;
-  opacity: 1;
-}
 
-#buttoncontainer{
-background-color: red
 
-}
-.slider-container .action-buttons button {
+/*.slider-container .action-buttons button {
   position: absolute;
     z-index: 80;
   align-content: stretch;
-}
+}*/
 
 #imagen1 {
 height: 20px;
 
 }
 .nav{
-
-    position: fixed;
-  width: 100px;
-  height: 100px;
+  cursor: pointer;
+  position: fixed;
+  width: 4rem;
+  height: 4rem;
   bottom: 0;
   right: 0;
-  margin: 0.5% 0.5%;
+  margin: 2% 2%;
   display: flex;
 flex-direction: row-reverse;
 border:solid;
@@ -139,14 +136,27 @@ border-radius: 50%
   justify-content: center;
   opacity: 1;
   color: black;
+   background-color: #166461;
+   text-decoration-color: white;  
 }
-  a{
-  text-decoration: none;
+
+:hover.nav{
+background-color: white;
+opacity: 0.6;
+border-color: green-;
+}
+
+a{
+  text-decoration: none ;
+  color:black;
+  font-size: medium;
 
 }
+
 
 
 .slider-container .action-buttons .down-button {
+  
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
