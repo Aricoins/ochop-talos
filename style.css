@@ -10,11 +10,13 @@
 body {
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
+  text-align: center
     
 }
 @media (max-width:600px){
   img {
-    max-width: 80%
+    max-width: 80%;
+    text-orientation: mixed;
   }
  
 }
@@ -43,6 +45,7 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
+ 
 }
 
 .left-slide h1 {
@@ -50,6 +53,12 @@ body {
   margin-bottom: 10px;
   margin-top: -30px;
 }
+
+@media (max-width:555px) {
+  .left-slide h1 {
+    max-width: 80%;
+   font-size: medium;
+}}
 
 .right-slide {
   height: 100%;
@@ -69,40 +78,72 @@ body {
 }
 
 button {
-  background-color: #fff;
-  border: none;
-  color: #aaa;
+  background-color:#fac8cb; ;
+  border: groove;
+  color: white;
   cursor: pointer;
-  font-size: 16px;
-  padding: 15px;
-}
+  opacity: 0.7;
+  display: flex;
+  margin-top: 75%;
+  margin-left: 35%;
+  padding: 1%;
+   position: fixed;
+  width: 50px;
+  height: 100px;
+  bottom: 0;
+  right: 60%;
+
+ }
+ @media (max-width:555px) {
+  .left-slide h1 {
+    max-width: 80%;
+   font-size: medium;
+   right:50%;
+}}
 
 button:hover {
   color: #222;
+  opacity: 1;
 }
 
-button:focus {
-  outline: none;
-}
 
 .slider-container .action-buttons button {
   position: absolute;
-  left: 35%;
-  top: 50%;
-  z-index: 100;
+    z-index: 100;
+  align-content: stretch;
 }
 
 #imagen1 {
 height: 20px;
 
 }
+.nav{
 
+    position: fixed;
+  width: 100px;
+  height: 100px;
+  bottom: 0;
+  right: 0;
+  margin: 0.5% 0.5%;
+  display: flex;
+flex-direction: row-reverse;
+border:solid;
+border-radius: 50%
+  opacity: 0.5;
+  border-color: white;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  opacity: 1
+
+}
 
 
 .slider-container .action-buttons .down-button {
   transform: translateX(-100%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+
 }
 
 .slider-container .action-buttons .up-button {
@@ -110,3 +151,14 @@ height: 20px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+/*:hover .nav{
+ background-color: white;
+  color: black;  }
+
+@media (max-width:555px) {
+  .nav {
+    width: 25%;
+    height: 25%;
+
+}/*
