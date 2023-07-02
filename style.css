@@ -86,7 +86,7 @@ button {
   display: flex;
   margin-top: 35%;
   margin-left: 35%;
-  padding: 2%;
+  padding: 3%;
   position: fixed;
 flex-wrap: wrap;
 
@@ -138,6 +138,7 @@ border-radius: 50%
   color: black;
    background-color: #166461;
    text-decoration-color: white;  
+   font-size: smaller;
 }
 
 :hover.nav{
